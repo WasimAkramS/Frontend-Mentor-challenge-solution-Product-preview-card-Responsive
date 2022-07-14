@@ -1,0 +1,108 @@
+/* Feel free to remove these styles or customise in your own stylesheet 👍 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
+
+body {
+    margin: 0;
+    /* box-sizing: border-box; */
+    background-color:  hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.card-container {
+    margin: 100px auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    overflow: hidden;
+    width: 475px;
+    height:370px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+@media (max-width: 550px) {
+    .card-container {
+        display: grid;
+        grid-auto-flow: row;
+        height: auto;
+        width: 285px;
+        
+    }
+}
+
+
+.column2 {
+    padding: 15px;
+    background-color: white;
+}
+
+img {
+   width: 100%;
+    height:100%; 
+    object-fit: cover;  
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+h5 {
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+.product-category {
+    letter-spacing: 0.3rem;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.price {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.price .final-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+h5, p {
+    color:hsl(228, 12%, 48%)
+}
+
+.btn {
+    display:block;
+    margin: 0 auto;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 50px;
+    border-radius: 5px;
+}
+
+button img {
+    width:11px;
+    padding-right: 6px;
+}
+
+.btn:hover {
+    background-color: hsl(212, 21%, 14%);
+    font-size: 0.88rem;
+}
